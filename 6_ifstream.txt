@@ -1,0 +1,3 @@
+apple 2.71 red 12
+orange 1.99 orange 9
+banana 1.21 yellow 90
