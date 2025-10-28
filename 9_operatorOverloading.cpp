@@ -4,39 +4,43 @@
 
 using namespace std;
 
+// Operator and function overloading expands the capabilities of a function/operator
+// by writing multiple definitions/functionalities for it based on the input arguments
 
 class Triangle{
     private:
-    int angleA;
-    int angleB;
-    int angleC;
+    int angle = 0;
 
     public:
     int a;
     int b;
     int c;
 
-    Triangle(): a(1), b(1), c(1) {}
+    Triangle(){a = 1; b = 1; c = 1;}
     Triangle(double a_in, double b_in, double c_in): a(a_in), b(b_in), c(c_in){}
-
-    Triangle(double side)
-    : Triangle(side, side, side){}
+    Triangle(double side): Triangle(side, side, side){}
 
     ~Triangle(){
         cout << "Triangle dtor" << endl;
     }
 
+    void increase_angle(double x){ 
+        angle += x;
+    }
     void scale(double s){ 
         a *= s;
         b *= s;
         c *= s;
     }
+    void print() const{
+        cout << "Side lengths: " << a << " " << b << " " << c << endl;
+    }
 };
 
-// Function Overloading: Same name, but function signature
+// Function Overloading: Same name, but different function signature
     // Function Signature: includes parameters and their types, but NOT the return type
 
-int add(int a, int b){
+double add(int a, int b){
     return a + b;
 }
 double add(double a, double b){
@@ -49,8 +53,7 @@ double add(double a, int b){
     return a + b;
 }
 
-// OVERLOADING OPERATORS ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    // Expands the capabilities of existing operators in code
+// Operator Overloading:
     // Output operator overloadig must be declared as a non-member function
 
 double operator+(const Triangle &tri1, const Triangle &tri2){ // Adds the perimeters of 2 triangles
@@ -60,7 +63,7 @@ double operator+(const Triangle &tri1, const Triangle &tri2){ // Adds the perime
     return (a + b + c);
 }
 
-ostream &operator<<(ostream &os, const Triangle &t){ // Remember to use std:: for ostreams if not using namespace std
+ostream &operator<<(ostream &os, const Triangle &t){
     os << "Triangle sides: sideA{" << t.a << "}, sideB{" << t.b << "}, sideC{" << t.c << "}";
 }
 

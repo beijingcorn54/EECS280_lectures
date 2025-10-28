@@ -49,7 +49,7 @@ my_ifstream.close(); // Good practice
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Output file stream: Used to import information into an external file from our main function
-ifstream my_ofstream("6_ofstream.txt");
+ofstream my_ofstream("6_ofstream.txt");
 if (!my_ofstream.is_open()){ // Check if file stream is open
     cout << "Output file stream closed." << endl;
     return 1;

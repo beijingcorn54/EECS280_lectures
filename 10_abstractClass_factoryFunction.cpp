@@ -4,11 +4,7 @@
 
 using namespace std;
 
-// Derived type: Any class derived from a base class (inheritance)
-// Subtype: A derived type where anything true in the base class is ALWAYS true for the derived type
 
-// Abstract Class: You will never make an object from this funamental class, but many
-// important classes are derived from this class
 class Animal{
     public:
     string name;

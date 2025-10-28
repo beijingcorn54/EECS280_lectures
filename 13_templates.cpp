@@ -1,14 +1,11 @@
-// Templates:
-// Implements a generic class with a flexible element type
+// Templates: Implements a generic data type
 #include <utility>
 #include<iostream>
 #include <vector>
 
 template<typename T>
-
 class unsortedVector{
     private:
-
     vector<T> v;
     static int array_size = 10;
     T arr[array_size];

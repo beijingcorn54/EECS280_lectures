@@ -7,7 +7,8 @@ using namespace std;
 
 int main(){
     
-    int my_array[6] = {0, 1, 2, 3, 4, 5}; // Array declaration
+    int my_array[6] = {0, 10, 20, 30, 40, 50}; // Array declaration
+    std::array<int, 6> your_array = {0, 1, 2, 3, 4, 5}; // Alternate Array declaration
     // Arrays may not be resized
     // Arrays store memory junk upon initialization
 
@@ -21,7 +22,7 @@ int main(){
     
     // Array Addition: Computes an array offset
     int *arrayPtr2 = my_array + 2;
-    cout << *arrayPtr2 << endl; // Prints "2"
+    cout << *arrayPtr2 << endl; // Prints "20"
 
     *arrayPtr = *(my_array + 3); 
     cout << *arrayPtr << endl; // Prints "-23"
@@ -30,8 +31,8 @@ int main(){
     cout << arrayPtr - *(arrayPtr + 3) << endl; // Prints "-3"
 
     // Array Indexing
-    cout << my_array[4] << endl; // Prints 4
-    cout << *(my_array + 2) << endl; // Prints 2
+    cout << my_array[4] << endl; // Prints 40
+    cout << *(my_array + 2) << endl; // Prints 20
 
     // Traversals by pointer for arrays
     int size = 100;

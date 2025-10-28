@@ -4,6 +4,7 @@ using namespace std;
 
 
 // Abstract Data Type (Classes, objects, etc): Make-your-own data type that holds custom functions and parameters
+// NOTE ON POINTERS: For any pointer to an ADT, use -> to access any member of that ADT
 
 // Structs
 struct Person{
@@ -24,6 +25,6 @@ int main(){
     // Pointers with structs
     const Person * ptr_person = &Richard;
     (*ptr_person).age;  // Accesses Richard's age: 18
-    ptr_person->age;    // Does same thing
+    ptr_person->age;    // Does same thing, but this respects the struct interface
 
 }
