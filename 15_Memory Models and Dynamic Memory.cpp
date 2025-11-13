@@ -26,6 +26,7 @@ int main(){
     delete ptr;
 
     // For new/delete with pointers, it matters which object the pointer is pointing to
+    // Deleting a pointer simply means deleting the object it points to
     int *ptr1 = new int(1);
     delete ptr1;
     ptr1 = new int(2);
