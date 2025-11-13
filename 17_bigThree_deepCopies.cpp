@@ -19,7 +19,7 @@
         // d. You must make your own deep copy constructor
 
     // Shallow Copy:
-        // a. Creates only references (or pointers) to the original member objects
+        // a. Creates a reference/pointer to the same memory object
         // b. Changes to shared members in one object will be reflected in the other
         // c. Faster and uses less memory
         // d. Each class comes with a built-in shallow-copy constructor

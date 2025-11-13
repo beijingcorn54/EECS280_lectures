@@ -2,6 +2,8 @@
 #include<string>
 #include<iostream>
 
+// Abstract: Custom
+// Class: Abstract Data Type
 using namespace std;
 
 class Triangle{
