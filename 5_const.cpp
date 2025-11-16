@@ -23,7 +23,12 @@ int y = 0;
 // bound to a constant value
 const int &ref_x = x;
 
-int &ref_x = x;         // ERROR: ref_x is NOT a constant, but x is a constant
+// ERROR: ref_x is NOT a constant, but x is a constant
+int &ref_x = x;
+
 const int &ref_y = y;   // SHOULD NOT DO: ref_y is a constant, but  y is NOT a constant
 
 }
+
+// g++ 5_const.cpp -o 5_const.exe
+// ./5_const.exe

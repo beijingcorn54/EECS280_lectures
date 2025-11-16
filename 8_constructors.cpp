@@ -61,3 +61,6 @@ class cherry{ // 5
         cout << "cherry dtor" << endl;
     }
 };
+
+// g++ 8_constructors.cpp -o 8_constructors.exe
+// ./8_constructors.exe

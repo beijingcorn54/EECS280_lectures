@@ -67,3 +67,7 @@ int main(){ // You can only access public members in this driver function
     p3.name = "Bill";
     p4.name = "Hailey";
 }
+
+
+// g++ 8_introToClasses.cpp -o 8_introToClasses.exe
+// ./8_introToClasses.exe

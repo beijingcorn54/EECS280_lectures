@@ -24,3 +24,6 @@ template<typename T>
 void unsortedVector<T>::remove(T arr){
     // Implementation for an array
 }
+
+// g++ 13_templates.cpp -o 13_templates.exe
+// ./13_templates.exe

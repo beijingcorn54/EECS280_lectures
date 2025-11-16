@@ -126,3 +126,6 @@ int main() {
   cout << s1 << endl; // prints { 2, 3 }
   cout << s2 << endl; // prints { 2, 5 }
 }
+
+// g++ 17_deepCopyConstructor.cpp -o 17_deepCopyConstructor.exe
+// ./17_deepCopyConstructor.exe

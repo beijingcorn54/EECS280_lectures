@@ -154,3 +154,7 @@ class linkedList {
             }
         }
 };
+
+
+// g++ 18_linkedLists.cpp -o 18_linkedLists.exe
+// ./18_linkedLists.exe

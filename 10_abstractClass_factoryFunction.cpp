@@ -69,7 +69,10 @@ int main(){
     // Calling the factory function
     Animal *animalPtr = animal_factory(true, 2);
     animalPtr = animal_factory(false, 0);
-    delete animalPtr;
     // good practice to use "delete" operator once the pointer's use has ended, 
     // since the animal_factory() function uses the "new" operator
 }
+
+
+// g++ 10_abstractClass_factoryFunction.cpp -o 10_abstractClass_factoryFunction.exe
+// ./10_abstractClass_factoryFunction.exe

@@ -32,3 +32,6 @@ int main(){
     // If successsful, the iterator points to the new pair of values and bool = true
     // If unsucessful, the iterator points to the existing element already there and bool = false;
 }
+
+// g++ 14_associativeContainers.cpp -o 14_associativeContainers.exe
+// ./14_associativeContainers.exe

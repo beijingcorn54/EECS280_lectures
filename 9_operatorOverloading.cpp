@@ -65,6 +65,7 @@ double operator+(const Triangle &tri1, const Triangle &tri2){ // Adds the perime
 
 ostream &operator<<(ostream &os, const Triangle &t){
     os << "Triangle sides: sideA{" << t.a << "}, sideB{" << t.b << "}, sideC{" << t.c << "}";
+    return os;
 }
 
 int main(){
@@ -81,3 +82,6 @@ int main(){
     cout << t1 << endl; // << prints the sides of t1
 
 }
+
+// g++ 9_operatorOverloading.cpp -o 9_operatorOverloading.exe
+// ./9_operatorOverloading.exe

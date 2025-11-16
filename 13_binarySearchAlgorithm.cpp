@@ -29,3 +29,7 @@ const int binarySearch(int target_value, int start_index, int end_index, const v
     }
     return -1;
 }
+
+
+// g++ 13_binarySearchAlgorithm.cpp -o 13_binarySearchAlgorithm.exe
+// ./13_binarySearchAlgorithm.exe

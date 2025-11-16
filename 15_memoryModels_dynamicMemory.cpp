@@ -45,3 +45,6 @@ int main(){
     int* arrPtr = new int[arrsize];
     delete[] arrPtr;
 }
+
+// g++ 15_memoryModels_dynamicMemory.cpp -o 15_memoryModels_dynamicMemory.exe
+// ./15_memoryModels_dynamicMemory.exe

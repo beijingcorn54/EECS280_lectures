@@ -23,3 +23,6 @@ int main(){
       i = 42; // sets all elements to 42
      }
 }
+
+// g++ 14_iterators_traversals.cpp -o 14_iterators_traversals.exe
+// ./14_iterators_traversals.exe

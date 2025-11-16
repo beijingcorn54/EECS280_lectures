@@ -35,3 +35,7 @@ class array_class{
     }
 
 };
+
+
+// g++ 16_RAII_constructors.cpp -o 16_RAII_constructors.exe
+// ./16_RAII_constructors.exe

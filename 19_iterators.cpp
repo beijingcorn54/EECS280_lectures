@@ -1,5 +1,6 @@
 // You can make abstract iterators as a nested class in the public section
-
+    // Iterator: An class-type object that mimics a pointer
+    // Functor: An class-type object that mimics a function
 #include <iostream>
 #include <cassert>
 using namespace std;
@@ -173,15 +174,36 @@ public:
 //.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.
 //.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.
 //.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.
+
 template<typename it>
-it max_element(it begin, it end){
-    it max = begin;
+bool any_odd_1(it begin, it end){
     for(it x = begin; x != end, x++){
-        if(*max < *x){
-            max = x;
+        if(*x % 2 != 0){
+            return true;
         }
     }
-    return max;
+    return false;
+}
+
+template<typename it>
+bool any_odd_2(it begin, it end){
+    while(begin != end){
+        if(*begin % 2 != 0){
+            return true;
+            ++begin;
+        }
+    }
+    return false;
+}
+
+template<typename it>
+bool any_odd_3(it begin, it end){
+    for(; begin != end, ++begin){
+        if(*begin % 2 != 0){
+            return true;
+        }
+    }
+    return false;
 }
 
 template <typename it>
@@ -208,6 +230,12 @@ int main(){
 
     vector<int> v = {1,2,3,4,5};
 
-    auto x = max_element(v.begin(), v.end());
+    bool is_odd_1 = any_odd_1(v.begin(), v.end());
+    bool is_odd_2 = any_odd_2(v.begin(), v.end());
+    bool is_odd_3 = any_odd_3(v.begin(), v.end());
+
 
 }
+
+// g++ 19_iterators.cpp -o 19_iterators.exe
+// ./19_iterators.exe

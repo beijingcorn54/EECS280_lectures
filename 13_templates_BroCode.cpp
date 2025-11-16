@@ -18,3 +18,6 @@ int main(){
     int c = add(2, 3.1);
     double d = add(2, 3.1);
 }
+
+// g++ 13_templates_BroCode.cpp -o 13_templates_BroCode.exe
+// ./13_templates_BroCode.exe

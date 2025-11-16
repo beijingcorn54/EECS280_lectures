@@ -43,18 +43,19 @@ int main(){
     
     pbp(&x, &y);
     pbr(x, y);
-    int z = pbv(x,y);
+    int a = pbv(x,y);
 
     // References .//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.
-    int &z = x; // z and x are now stored at the same address in the computer.
+    int &ref = x; // z and x are now stored at the same address in the computer.
                 // z==x is always true.
-    z = 17;     // z = 17, so x = 17
-    z += 2;     // z += 2, so x += 2
+    ref = 17;     // ref = 17, so x = 17
+    ref += 2;     // ref += 2, so x += 2
+    cout << ref << " " << x << endl;
 
     // Pointers .//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.
     int *ptr_a = &x;        // ptr_a stores the address of x
-    ptr_a;  // Accesses the address of x
-    *ptr_a; // Accesses the value of x (dereferences the pointer)
+    cout << ptr_a << endl;  // Accesses the address of x
+    cout << *ptr_a << endl; // Accesses the value of x (dereferences the pointer)
     int *ptr_b = &z;
     ptr_a = ptr_b; // ptr_a and ptr_b now both point to x
 
@@ -63,9 +64,13 @@ int main(){
         ptr_a = &y;
         // You can make pointers of pointers, but references cannot
         int **ptr_c = &ptr_a;
-        ptr_c;      // Accesses the address of ptr_a
-        *ptr_c;     // Accesses the value of ptr_a, which is the address of y
-        **ptr_c;    // Accesses the value of y
+
+        cout << ptr_c << endl;      // Accesses the address of ptr_a
+        cout << *ptr_c << endl;     // Accesses the value of ptr_a, which is the address of y
+        cout << **ptr_c << endl;    // Accesses the value of y
         // Pointers can be null, but references cannot
         int * ptr_null = nullptr;
 }
+
+// g++ 3-4_Machine_Model.cpp -o 3-4_Machine_Model.exe
+// ./3-4_Machine_Model.exe

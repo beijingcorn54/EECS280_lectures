@@ -2,7 +2,7 @@
 #include <utility>
 #include<iostream>
 using namespace std;
-
+// NEW DATA TYPE: Pair - A coordinate pair
 
 int main(){
 
@@ -27,3 +27,6 @@ int main(){
     bool bool_int = static_cast<bool>(number_int);
     bool bool_double = static_cast<bool>(number_double);
 }
+
+// g++ 1-2_Intro_to_C++.cpp -o 1-2_Intro_to_C++.exe
+// ./1-2_Intro_to_C++.exe

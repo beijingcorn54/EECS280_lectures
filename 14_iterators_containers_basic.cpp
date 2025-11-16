@@ -66,3 +66,6 @@ int main(){
      std::cout << *it_l1 << std::endl; // INVALID
      std::cout << *(++it_l2) << std::endl; // INVALID
 }
+
+// g++ 14_iterators_containers_basic.cpp -o 14_iterators_containers_basic.exe
+// ./14_iterators_containers_basic.exe

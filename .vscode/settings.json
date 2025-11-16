@@ -90,6 +90,14 @@
     "cwchar": "cpp",
     "execution": "cpp",
     "memory": "cpp",
-    "algorithm": "cpp"
+    "algorithm": "cpp",
+    "20_functionpointers": "cpp",
+    "__hash_table": "cpp",
+    "unordered_map": "cpp",
+    "deque": "cpp",
+    "list": "cpp",
+    "map": "cpp",
+    "set": "cpp",
+    "__tree": "cpp"
   }
 }

@@ -16,3 +16,6 @@ int main(){
         std::cout << *i << std::endl;
     }
 }
+
+// g++ 14_autoKeyWord.cpp -o 14_autoKeyWord.exe
+// ./14_autoKeyWord.exe

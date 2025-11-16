@@ -67,3 +67,6 @@ int main() {
   cPtr->f2();  // 30
 
 }
+
+// g++ 10_SubtypePolymorphism.cpp -o 10_SubtypePolymorphism.exe
+// ./10_SubtypePolymorphism.exe

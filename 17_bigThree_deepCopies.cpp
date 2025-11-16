@@ -97,3 +97,6 @@ public:
     UnsortedIntSet z = x;
   }
 };
+
+// g++ 17_bigThree_deepCopies.cpp -o 17_bigThree_deepCopies.exe
+// ./17_bigThree_deepCopies.exe

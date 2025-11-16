@@ -24,7 +24,10 @@ int main(){
 
     // Pointers with structs
     const Person * ptr_person = &Richard;
-    (*ptr_person).age;  // Accesses Richard's age: 18
-    ptr_person->age;    // Does same thing, but this respects the struct interface
+    cout << (*ptr_person).age << endl;  // Accesses Richard's age: 18
+    cout << ptr_person->age << endl;    // Does same thing, but this respects the struct interface
 
 }
+
+// g++ 5_Structs.cpp -o 5_Structs.exe
+// ./5_Structs.exe

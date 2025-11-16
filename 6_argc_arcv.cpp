@@ -10,12 +10,6 @@ using namespace std;
 // argc: Number of argumentsd passed into the main functions through terminal commands
 // *argv[] (A pointer of pointers of vectors): This essentially holds the names of all the arguments passed into the main function
 
-// Example Call:
-// ./6_argc_arcv.exe 6_ifstream.txt 6
-    // 6_ifstream.txt- The name of the input file to be read into the main function
-    // 6 - number of times the message will be read
-
-
 void print(istream &fin){
   string fruit;
   bool price = 0;
@@ -51,3 +45,11 @@ int main(int argc, char *argv[]) {
     cout << endl;
   }
 }
+
+// Example Call:
+// ./6_argc_arcv.exe 6_ifstream.txt 6
+    // 6_ifstream.txt- The name of the input file to be read into the main function
+    // 6 - number of times the message will be read
+
+// g++ 6_argc_arcv.cpp -o 6_argc_arcv.exe
+// ./6_argc_arcv.exe 6_ifstream.txt 6_ofstream.txt

@@ -61,3 +61,7 @@ int main(){
     max.talk(); // meow
     mittens.talk(); // rawr
 }
+
+
+// g++ 9_inheritance_condensedNotes.cpp -o 9_inheritance_condensedNotes.exe
+// ./9_inheritance_condensedNotes.exe

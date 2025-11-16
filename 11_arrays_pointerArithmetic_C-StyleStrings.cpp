@@ -12,7 +12,7 @@ int main(){
     // Arrays may not be resized
     // Arrays store memory junk upon initialization
 
-    my_array[3]; // returns "3"
+    cout << my_array[3] << endl; // returns "3"
     my_array[3] = -23;
 
     // int your_array[6] = my_array; // ERROR: you're not allowed to assign arrays to eachother
@@ -58,3 +58,6 @@ int main(){
         strPtr++;
     }
 }
+
+// g++ 11_arrays_pointerArithmetic_C-StyleStrings.cpp -o 11_arrays_pointerArithmetic_C-StyleStrings.exe
+// ./11_arrays_pointerArithmetic_C-StyleStrings.exe

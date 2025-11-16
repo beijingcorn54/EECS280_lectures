@@ -63,3 +63,7 @@ int main(){
     c.talk();  // Calls the Chicken talk() function
     b.talk();  // Calls the Bird talk() function
 }
+
+
+// g++ 9_inheritance.cpp -o 9_inheritance.exe
+// ./9_inheritance.exe

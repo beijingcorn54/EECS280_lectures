@@ -24,3 +24,6 @@ bool my_is_empty(my_iterator_type begin, my_iterator_type end){
         return false;
     }
 }
+
+// g++ 14_iteratorFunctions.cpp -o 14_iteratorFunctions.exe
+// ./14_iteratorFunctions.exe
