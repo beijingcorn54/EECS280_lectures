@@ -21,6 +21,8 @@ int main(){
 
     int a = factorial_iteratively(5); // 120
     int b = factorial_recursively(5); // 120
+
+    cout << a << " " << b << endl;
 }
 
 //.//.//.//.//.//.//.//.//.//.//.//.//.//.//.//.
